@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
-import { Github, Linkedin, Mail, Menu, X, Download, Check } from "lucide-react"
+import { Github, Linkedin, Mail, Facebook, Menu, X, Download, Check } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
@@ -168,7 +168,7 @@ export default function Portfolio() {
               <div className="relative">
                 <div className="w-80 h-96 md:w-96 md:h-[500px] bg-gradient-to-br from-pink-100 to-pink-200 rounded-lg overflow-hidden border-4 border-pink-200">
                   <Image
-                    src="/placeholder.svg?height=500&width=400"
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HfbCPg6E-FUmxmc2EnxanTIvMbpJUcFdeGKhoqS.jpeg"
                     alt="Dorra Mabrouki"
                     width={400}
                     height={500}
@@ -191,8 +191,42 @@ export default function Portfolio() {
           <div className="max-w-3xl mx-auto mb-12">
             <p className="text-gray-600 leading-relaxed mb-8">
               I'm a final-year engineering student specializing in Industrial IT and Automation Engineering. My passion
-              lies in neuromorphic computing, IoT systems, and embedded technologies.
+              lies in neuromorphic computing, IoT systems, and embedded technologies. I'm structured, self-driven, and
+              autonomous, actively seeking opportunities to contribute to innovative projects that integrate AI into
+              edge devices.
             </p>
+          </div>
+
+          {/* Decorative divider */}
+          <div className="flex justify-center mb-16">
+            <div className="w-16 h-px bg-black"></div>
+            <div className="w-4 h-4 bg-black transform rotate-45 mx-4 -mt-2"></div>
+            <div className="w-16 h-px bg-black"></div>
+          </div>
+
+          {/* Services - Neuromorphic Computing in the middle */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div className="text-center">
+              <h3 className="text-xl font-bold mb-4 uppercase tracking-wide">IoT Development</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                I can design IoT solutions based on your needs and suggestions. I can also design the hardware and
+                implement the software during the job.
+              </p>
+            </div>
+            <div className="text-center">
+              <h3 className="text-xl font-bold mb-4 uppercase tracking-wide">Neuromorphic Computing</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                I can design SNN models based on your needs and suggestions. I can also design the architecture and
+                implement optimization during the job.
+              </p>
+            </div>
+            <div className="text-center">
+              <h3 className="text-xl font-bold mb-4 uppercase tracking-wide">Embedded Systems</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                I can design embedded systems based on your needs and suggestions. I can also design the hardware and
+                implement the software during the job.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -749,6 +783,24 @@ export default function Portfolio() {
       {/* Contact Section */}
       <footer className="bg-black text-white py-12">
         <div className="container mx-auto px-4 text-center">
+          <div className="mb-8">
+            <Link href="#" className="text-sm uppercase tracking-wide hover:text-gray-300">
+              Back to Top
+            </Link>
+          </div>
+
+          <div className="flex justify-center space-x-6 mb-8">
+            <Link href="#" className="hover:text-gray-300">
+              <Facebook className="w-5 h-5" />
+            </Link>
+            <Link href="https://www.linkedin.com/in/dorra-mabrouki-644997245/" className="hover:text-gray-300">
+              <Linkedin className="w-5 h-5" />
+            </Link>
+            <Button onClick={handleCopyEmail} className="hover:text-gray-300 bg-transparent p-0 h-auto">
+              <Mail className="w-5 h-5" />
+            </Button>
+          </div>
+
           <p className="text-sm text-gray-400">©2024 Dorra Mabrouki All Rights Reserved.</p>
         </div>
       </footer>

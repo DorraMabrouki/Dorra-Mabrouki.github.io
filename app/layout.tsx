@@ -8,6 +8,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "John Doe - Portfolio",
   description: "Full Stack Engineer Portfolio",
+    generator: 'v0.dev'
 }
 
 export default function RootLayout({
